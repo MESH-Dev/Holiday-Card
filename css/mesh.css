@@ -8,6 +8,7 @@
 
 .top {
     margin-top: 20px;
+    padding-right: 35px;
 }
 
 .filter {
@@ -172,4 +173,12 @@ a:hover.tooltips span {
   -webkit-transform: rotateX(180deg) rotateZ(0deg) rotateY(0deg);
   -webkit-transition: -webkit-transform .5s, z-index 0s 0.25s;;
   z-index: -2;
+}
+
+.reset {
+  font-family: "brandon-grotesque",sans-serif;
+  color: #00E2CD;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
 }
