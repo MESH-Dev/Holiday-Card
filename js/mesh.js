@@ -30,19 +30,31 @@ $( document ).ready(function() {
 
     });
 
+    $snowfall = false;
+
     $('.rain').click(function() {
+      if ($snowfall == false) {
         $(document).snowfall({image :"images/MESH.png", minSize: 10, maxSize:32});
+        $snowfall = true;
+      } else {
+        $(document).snowfall('clear');
+        $snowfall = false;
+      }
+
     });
 
     setTimeout(function() {
 
       $(".pop-up").fadeIn();
 
-    }, 2000)
+    }, 500)
 
     $("body").click(function(){
       $(".pop-up").fadeOut();
     })
 
+    $(".rain").click(function(){
+      $(this).toggleClass("rotator")  ;
+    })
 
 });

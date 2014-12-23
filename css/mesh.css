@@ -140,3 +140,36 @@ a:hover.tooltips span {
 .opaque {
   opacity: 0.3;
 }
+
+.rain {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.flag {
+  position: absolute;
+  top: 49px;
+  right: 2px;
+}
+
+.lever {
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  -webkit-transition: -webkit-transform .5s , z-index 0s 0.25s;
+}
+
+.lever {
+  z-index: -1;
+  -webkit-transition: -webkit-transform .5s, z-index 0s 0.25s;
+  -webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+  -webkit-transform: perspective(0);
+}
+
+.rotator  .lever{
+  top: 14px;
+  -webkit-transform: rotateX(180deg) rotateZ(0deg) rotateY(0deg);
+  -webkit-transition: -webkit-transform .5s, z-index 0s 0.25s;;
+  z-index: -2;
+}
