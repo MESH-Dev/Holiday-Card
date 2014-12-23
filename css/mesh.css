@@ -1,5 +1,5 @@
 .header {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .footer {
@@ -33,13 +33,37 @@
     line-height: 38px;
 }
 
-.action a {
+.action-item {
     text-decoration: none;
 }
 
-.action a:hover {
-    opacity: 0.8;
+.action-item:hover {
     cursor: pointer;
+}
+
+.pop-up {
+  display: block;
+  position: absolute;
+  top: 120px;
+  right: 33%;
+  display: none;
+}
+
+.pop-up-image {
+  position: relative;
+}
+
+.pop-up-text {
+  font-family: "brandon-grotesque", sans-serif;
+  position: absolute;
+  color: white;
+  top: 20%;
+  text-align: center;
+  margin: auto 20%;
+}
+
+.highlight {
+  color: #002ff7;
 }
 
 .bold {
@@ -49,21 +73,70 @@
 .sustainability {
     color: #CCCC33;
 }
+.sustainability span {
+  background: #cccc33;
+}
 .studio {
     color: #ff9966;
+}
+.studio span {
+  background: #ff9966;
 }
 .arts-education {
     color: #ffcc33;
 }
+.arts-education span {
+  background: #ffcc33;
+}
 .bright-future {
     color: #ff574a;
+}
+.bright-future span {
+  background: #ff574a;
 }
 .healthcare {
     color: #3366cc;
 }
+.healthcare span {
+  background: #3366cc;
+}
 .legal {
     color: #ff66ff;
 }
+.legal span {
+  background: #ff66ff;
+}
 .urban-planning {
     color: #cc0066;
+}
+.urban-planning span {
+  background: #cc0066;
+}
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:380px;
+  color: #FFFFFF;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 0px;
+  font-size: 12px;
+  font-family: "brandon-grotesque",sans-serif;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999;
+}
+
+.opaque {
+  opacity: 0.3;
 }
