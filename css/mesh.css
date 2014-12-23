@@ -19,6 +19,11 @@
     margin-bottom: 10px
 }
 
+.menu-item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .lead {
     font-family: "brandon-grotesque",sans-serif;
     font-weight: 600;
@@ -139,13 +144,18 @@ a:hover.tooltips span {
 }
 
 .opaque {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .rain {
   position: relative;
   width: 100%;
   height: 200px;
+}
+
+.rain:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .flag {

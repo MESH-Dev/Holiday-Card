@@ -34,14 +34,28 @@ $( document ).ready(function() {
 
     $('.rain').click(function() {
       if ($snowfall == false) {
-        $(document).snowfall({image :"images/MESH.png", minSize: 10, maxSize:32});
+        $(document).snowfall({
+          image :"images/emojis/2.png", minSize: 10, maxSize:32
+        });
         $snowfall = true;
+
+        $('.snowfall-flakes').each(function(i, el){
+          var randomNumber = Math.floor(Math.random() * 12) + 1;
+          var newSrc = randomNumber + '.png';
+
+          console.log(newSrc);
+
+          $(this).attr("src", "images/emojis/" + newSrc);
+        });
+
+
       } else {
         $(document).snowfall('clear');
         $snowfall = false;
       }
 
     });
+
 
     setTimeout(function() {
 
