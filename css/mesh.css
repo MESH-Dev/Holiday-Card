@@ -139,6 +139,15 @@ a:hover.tooltips.legal span::after {
 a:hover.tooltips.urban-planning span::after {
   border-color: #cc0066 transparent transparent transparent;
 }
+.studio {
+  color: #FFAD84;
+}
+.studio span {
+  background: #FFAD84;
+}
+a:hover.tooltips.studio span::after {
+  border-color: #FFAD84 transparent transparent transparent;
+}
 
 a.tooltips {
   position: relative;
