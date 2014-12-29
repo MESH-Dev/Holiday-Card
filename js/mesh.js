@@ -63,8 +63,15 @@ $( document ).ready(function() {
 
     }, 500)
 
+    setTimeout(function() {
+
+
+      $(".pop-up").addClass('animated zoomOutUp');
+
+    }, 5500)
+
     $("body").click(function(){
-      $(".pop-up").fadeOut();
+      $(".pop-up").addClass('animated zoomOutUp');
     })
 
     $(".rain").click(function(){

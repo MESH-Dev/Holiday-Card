@@ -82,11 +82,17 @@
 .sustainability span {
   background: #cccc33;
 }
+a:hover.tooltips.sustainability span::after {
+  border-color: #cccc33 transparent transparent transparent;
+}
 .makers {
     color: #69dd8c;
 }
 .makers span {
   background: #69dd8c;
+}
+a:hover.tooltips.makers span::after {
+  border-color: #69dd8c transparent transparent transparent;
 }
 .arts-education {
     color: #ffcc33;
@@ -94,11 +100,17 @@
 .arts-education span {
   background: #ffcc33;
 }
+a:hover.tooltips.arts-education span::after {
+  border-color: #ffcc33 transparent transparent transparent;
+}
 .bright-future {
     color: #ff574a;
 }
 .bright-future span {
   background: #ff574a;
+}
+a:hover.tooltips.bright-future span::after {
+  border-color: #ff574a transparent transparent transparent;
 }
 .healthcare {
     color: #3366cc;
@@ -106,17 +118,26 @@
 .healthcare span {
   background: #3366cc;
 }
+a:hover.tooltips.healthcare span::after {
+  border-color: #3366cc transparent transparent transparent;
+}
 .legal {
     color: #ff66ff;
 }
 .legal span {
   background: #ff66ff;
 }
+a:hover.tooltips.legal span::after {
+  border-color: #ff66ff transparent transparent transparent;
+}
 .urban-planning {
     color: #cc0066;
 }
 .urban-planning span {
   background: #cc0066;
+}
+a:hover.tooltips.urban-planning span::after {
+  border-color: #cc0066 transparent transparent transparent;
 }
 
 a.tooltips {
@@ -137,10 +158,19 @@ a.tooltips span {
 }
 a:hover.tooltips span {
   visibility: visible;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -76px;
+  left: 1px;
+  top: -40px;
   z-index: 999;
+}
+a:hover.tooltips span::after {
+  content: '';
+  border: solid 10px transparent;
+  border-top: solid 0px transparent;
+  border-width: 10px;
+  left: 10px;
+  border-color: #222 transparent transparent transparent;
+  top: 30px;
+  position: absolute;
 }
 
 .opaque {
