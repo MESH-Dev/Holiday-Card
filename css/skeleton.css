@@ -43,15 +43,15 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     overflow: hidden;
-    padding: 0; }
+    padding-left: 5%; padding-right: 5%; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; overflow: hidden; }
+    width: 100%; overflow: hidden; padding-left: 5%; padding-right: 5%; }
   .column,
   .columns {
     margin-left: 4%; }
