@@ -79,73 +79,73 @@
 .sustainability {
     color: #CCCC33;
 }
-.sustainability span {
+.sustainability span.client {
   background: #cccc33;
 }
-a:hover.tooltips.sustainability span::after {
+a:hover.tooltips.sustainability span.client::after {
   border-color: #cccc33 transparent transparent transparent;
 }
 .makers {
     color: #69dd8c;
 }
-.makers span {
+.makers span.client {
   background: #69dd8c;
 }
-a:hover.tooltips.makers span::after {
+a:hover.tooltips.makers span.client::after {
   border-color: #69dd8c transparent transparent transparent;
 }
 .arts-education {
     color: #ffcc33;
 }
-.arts-education span {
+.arts-education span.client {
   background: #ffcc33;
 }
-a:hover.tooltips.arts-education span::after {
+a:hover.tooltips.arts-education span.client::after {
   border-color: #ffcc33 transparent transparent transparent;
 }
 .bright-future {
     color: #ff574a;
 }
-.bright-future span {
+.bright-future span.client {
   background: #ff574a;
 }
-a:hover.tooltips.bright-future span::after {
+a:hover.tooltips.bright-future span.client::after {
   border-color: #ff574a transparent transparent transparent;
 }
 .healthcare {
     color: #3366cc;
 }
-.healthcare span {
+.healthcare span.client {
   background: #3366cc;
 }
-a:hover.tooltips.healthcare span::after {
+a:hover.tooltips.healthcare span.client::after {
   border-color: #3366cc transparent transparent transparent;
 }
 .legal {
     color: #ff66ff;
 }
-.legal span {
+.legal span.client {
   background: #ff66ff;
 }
-a:hover.tooltips.legal span::after {
+a:hover.tooltips.legal span.client::after {
   border-color: #ff66ff transparent transparent transparent;
 }
 .urban-planning {
     color: #cc0066;
 }
-.urban-planning span {
+.urban-planning span.client {
   background: #cc0066;
 }
-a:hover.tooltips.urban-planning span::after {
+a:hover.tooltips.urban-planning span.client::after {
   border-color: #cc0066 transparent transparent transparent;
 }
 .studio {
   color: #FFAD84;
 }
-.studio span {
+.studio span.client {
   background: #FFAD84;
 }
-a:hover.tooltips.studio span::after {
+a:hover.tooltips.studio span.client::after {
   border-color: #FFAD84 transparent transparent transparent;
 }
 
@@ -153,7 +153,7 @@ a.tooltips {
   position: relative;
   display: inline;
 }
-a.tooltips span {
+a.tooltips span.client {
   position: absolute;
   width:380px;
   color: #FFFFFF;
@@ -165,13 +165,14 @@ a.tooltips span {
   font-size: 12px;
   font-family: "brandon-grotesque",sans-serif;
 }
-a:hover.tooltips span {
+
+a:hover.tooltips span.client {
   visibility: visible;
   left: 1px;
   top: -40px;
   z-index: 999;
 }
-a:hover.tooltips span::after {
+a:hover.tooltips span.client::after {
   content: '';
   border: solid 10px transparent;
   border-top: solid 0px transparent;
@@ -184,6 +185,10 @@ a:hover.tooltips span::after {
 
 .opaque {
   opacity: 0.2;
+}
+
+.gray{
+  color: #999999;
 }
 
 .rain {
